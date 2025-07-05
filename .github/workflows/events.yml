@@ -4,6 +4,17 @@ on:
     types: 
       - opened
 
+    branches:
+      - master
+      - 'dev-*'
+      - 'feat/**'
+
+  push:
+    branches:
+      - master
+      - 'dev-*'
+      - 'feat/**'
+
   workflow_dispatch:
   
 jobs:
