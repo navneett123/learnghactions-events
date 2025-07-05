@@ -1,41 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>GitHub Events Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <div class="container">
+    <!-- App Title -->
     <h1>🚀 GitHub Events Demo App</h1>
     <p class="subtitle">A simple CI/CD visualizer for Git workflows</p>
 
+    <!-- Branch Info -->
     <div class="branch-info">
       <h2>Current Branch:</h2>
       <p class="branch-name"><%= branch %></p>
     </div>
 
+    <!-- Event Cards -->
     <div class="grid">
       <div class="card">
-        <h3>Push</h3>
+        <h3>🔁 Push</h3>
         <p>Triggered when code is pushed to any branch.</p>
       </div>
       <div class="card">
-        <h3>Pull Request</h3>
-        <p>Checks and tests before merging into main.</p>
+        <h3>📥 Pull Request</h3>
+        <p>Runs tests before merging to main.</p>
       </div>
       <div class="card">
-        <h3>Merge</h3>
-        <p>Validates final deployment code.</p>
+        <h3>✅ Merge</h3>
+        <p>Final validation before deployment.</p>
       </div>
       <div class="card">
-        <h3>Workflow</h3>
-        <p>Handled by GitHub Actions.</p>
+        <h3>⚙️ Workflow</h3>
+        <p>Driven by GitHub Actions pipelines.</p>
       </div>
     </div>
 
+    <!-- Footer -->
     <footer>
-      <p>🛠 <a href="/main-preview">Always View Main</a></p>
+      <p>🛠 Need a reference? <a href="/main-preview">Preview Main</a></p>
     </footer>
   </div>
 </body>
