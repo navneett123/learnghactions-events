@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub Events Demo</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 GitHub Events Demo App</h1>
+    <p class="subtitle">A simple CI/CD visualizer for Git workflows</p>
+
+    <div class="branch-info">
+      <h2>Current Branch:</h2>
+      <p class="branch-name"><%= branch %></p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Push</h3>
+        <p>Triggered when code is pushed to any branch.</p>
+      </div>
+      <div class="card">
+        <h3>Pull Request</h3>
+        <p>Checks and tests before merging into main.</p>
+      </div>
+      <div class="card">
+        <h3>Merge</h3>
+        <p>Validates final deployment code.</p>
+      </div>
+      <div class="card">
+        <h3>Workflow</h3>
+        <p>Handled by GitHub Actions.</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>🛠 <a href="/main-preview">Always View Main</a></p>
+    </footer>
+  </div>
+</body>
+</html>
