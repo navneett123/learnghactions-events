@@ -1,5 +1,11 @@
 name: Events Workflow
-on: workflow_dispatch
+on:
+  pull_request:
+    types: 
+      - opened
+
+  workflow_dispatch:
+  
 jobs:
     deploy:
         runs-on: ubuntu-latest
